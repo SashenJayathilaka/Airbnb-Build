@@ -9,7 +9,7 @@ const nextConfig = {
 
   env: {
     mapbox_key:
-      "pk.eyJ1Ijoic2FzaGVuaGFzaW5kdSIsImEiOiJjbDcycm53MWExMWFqM3ZuMWxmaWd3em12In0.hf6v2HPnEMahEqYNxonZLQ",
+      "your mapbox public key",
   },
 };
 
