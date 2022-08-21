@@ -1,5 +1,7 @@
 # Airbnb with REACT.JS! 
 
+## <a href="https://ahost.vercel.app" target="_blank">🔴 LIVE DEMO</a>
+
 #### PREREQUISITES:
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 
@@ -88,3 +90,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 <hr />
+
+![image](https://user-images.githubusercontent.com/99184393/185786416-9c0581a7-6c0b-4951-bc91-af70ecda17ce.png)
+![image](https://user-images.githubusercontent.com/99184393/185786527-c3b592de-681f-4348-bc2a-5d68e3347796.png)
