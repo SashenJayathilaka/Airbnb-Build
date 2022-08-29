@@ -1,6 +1,6 @@
 # Airbnb with REACT.JS! 
 
-## <a href="https://ahost-reactdeveloper22.vercel.app" target="_blank">🔴 LIVE DEMO</a>
+## <a href="https://ahost.vercel.app" target="_blank">🔴 LIVE DEMO</a>
 
 #### PREREQUISITES:
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
