@@ -12,7 +12,10 @@ const Banner: React.FC<BannerProps> = () => {
     >
       <Image src={banner} layout="fill" objectFit="cover" />
       <div className="absolute top-1/2 w-full text-center">
-        <p className="text-white font-bold text-sm sm:text-lg">
+        <p
+          className="text-gray-00 font-bold mb-10 animate-bounce sm:text-lg"
+          style={{ fontSize: "40px" }}
+        >
           Not sure where to go? Prefect,
         </p>
         <button
