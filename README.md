@@ -1,11 +1,12 @@
 # Airbnb with REACT.JS! 
 
-## <a href="https://ahost.vercel.app" target="_blank">🔴 LIVE DEMO</a>
+## <a href="https://airbnb-build-two.vercel.app" target="_blank">🔴 LIVE DEMO</a>
 
 #### PREREQUISITES:
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="" width="30" height="30" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="30" height="30" /></a>
 <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Google" width="30" height="30" /></a>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
@@ -15,6 +16,10 @@
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="40" height="40" /></a>
 <br>
 <hr />
+
+<div align="center">
+<a href="https://airbnb-build-two.vercel.app"><img  src='https://user-images.githubusercontent.com/99184393/189361896-7a23cdc8-5601-45a9-b733-5893314af2fd.gif' alt='image'/></a>
+</div>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -91,5 +96,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 <hr />
 
-![image](https://user-images.githubusercontent.com/99184393/185786416-9c0581a7-6c0b-4951-bc91-af70ecda17ce.png)
-![image](https://user-images.githubusercontent.com/99184393/185786527-c3b592de-681f-4348-bc2a-5d68e3347796.png)
+<a href="https://airbnb-build-two.vercel.app" target="_blank">![image](https://user-images.githubusercontent.com/99184393/189365002-329864dd-30b1-4867-8b98-1419a31c5c96.png)</a>
