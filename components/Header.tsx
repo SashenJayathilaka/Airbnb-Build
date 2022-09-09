@@ -12,14 +12,18 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/router";
 
-function Header({ placeholder }) {
+type HeaderProps = {
+  placeholder?: any;
+};
+
+const Header: React.FC<HeaderProps> = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  const [noOfGuest, setNoOfGuest] = useState(1);
+  const [noOfGuest, setNoOfGuest] = useState<any>(1);
   const router = useRouter();
 
-  const handleSelect = (ranges) => {
+  const handleSelect = (ranges: any) => {
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
   };
@@ -45,7 +49,6 @@ function Header({ placeholder }) {
       },
     });
   };
-
   return (
     <header
       className="sticky top-0 z-50 grid grid-cols-3 bg-white
@@ -56,7 +59,7 @@ function Header({ placeholder }) {
         className="relative flex items-center h-10 cursor-pointer my-auto"
       >
         <Image
-          src="https://drive.google.com/uc?export=download&id=1BfRgUj8RcRhRvYbmtvjmcLGLbsUCdIuO"
+          src="https://i.postimg.cc/ydyhjmC0/185785168-d82eb824-a402-4df3-912d-8787f46ba048.png"
           layout="fill"
           objectFit="contain"
           objectPosition="left"
@@ -122,6 +125,5 @@ function Header({ placeholder }) {
       )}
     </header>
   );
-}
-
+};
 export default Header;

@@ -3,7 +3,25 @@ import Image from "next/image";
 import { HeartIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
 
-function InfoCard({ img, title, description, star, price, total, location }) {
+type InfoCardProps = {
+  img: any;
+  location: any;
+  description: any;
+  title: any;
+  star: number;
+  price: any;
+  total: any;
+};
+
+const InfoCard: React.FC<InfoCardProps> = ({
+  img,
+  location,
+  description,
+  title,
+  star,
+  price,
+  total,
+}) => {
   return (
     <div
       className="flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80
@@ -38,6 +56,5 @@ function InfoCard({ img, title, description, star, price, total, location }) {
       </div>
     </div>
   );
-}
-
+};
 export default InfoCard;

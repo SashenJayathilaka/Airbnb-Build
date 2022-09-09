@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-function SmallCard({ img, location, distance }) {
+type SmallCardProps = {
+  img: any;
+  distance: any;
+  location: any;
+};
+
+const SmallCard: React.FC<SmallCardProps> = ({ img, location, distance }) => {
   return (
     <div
       className="flex items-center m-2 mt-5 space-x-4 rounded-xl cursor-pointer
@@ -18,6 +24,5 @@ function SmallCard({ img, location, distance }) {
       </div>
     </div>
   );
-}
-
+};
 export default SmallCard;

@@ -1,12 +1,18 @@
+import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/Header";
 import Banner from "../components/Banner";
-import SmallCard from "../components/SmallCard";
-import MediumCard from "../components/MediumCard";
+import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
-import Footer from "../components/Footer";
+import MediumCard from "../components/MediumCard";
+import SmallCard from "../components/SmallCard";
+import smallCardImage from "/public/images/3643ec104098983.5f5b5ea7c10c5.png";
 
-export default function Home({ exploreData, cardData }) {
+type HomeProps = {
+  exploreData: any;
+  cardData: any;
+};
+
+const Home = ({ exploreData, cardData }: HomeProps) => {
   return (
     <div>
       <Head>
@@ -19,6 +25,7 @@ export default function Home({ exploreData, cardData }) {
       </Head>
       <Header />
       <Banner />
+
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
@@ -27,9 +34,9 @@ export default function Home({ exploreData, cardData }) {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
           xl:grid-cols-4"
           >
-            {exploreData?.map((item) => (
+            {exploreData?.map((item: any) => (
               <SmallCard
-                key={item.img}
+                key={item._id}
                 img={item.img}
                 distance={item.distance}
                 location={item.location}
@@ -43,31 +50,32 @@ export default function Home({ exploreData, cardData }) {
             className="flex space-x-3 overflow-scroll scrollbar-hide p-3
           -ml-3"
           >
-            {cardData?.map((item) => (
-              <MediumCard key={item.img} img={item.img} title={item.title} />
+            {cardData?.map((item: any) => (
+              <MediumCard key={item._id} img={item.img} title={item.title} />
             ))}
           </div>
         </section>
         <LargeCard
-          img="https://drive.google.com/uc?export=download&id=1HMGe9B5SX313RTopWccrRn6kT36LNfWZ"
+          img={smallCardImage}
           title="The Greatest Outdoors"
           description="wishlists curated by Airbnb"
           buttonText="Get Inspired"
         />
       </main>
-      <Footer />
     </div>
   );
-}
+};
+
+export default Home;
 
 export async function getServerSideProps() {
-  const exploreData = await fetch("https://links.papareact.com/pyp").then(
-    (res) => res.json()
-  );
+  const exploreData = await fetch(
+    "https://sashenairbnbsmallcard.herokuapp.com/v2/posts"
+  ).then((res) => res.json());
 
-  const cardData = await fetch("https://links.papareact.com/zp1").then((res) =>
-    res.json()
-  );
+  const cardData = await fetch(
+    "https://sashenarbnbmediumcard.herokuapp.com/v2/posts"
+  ).then((res) => res.json());
 
   return {
     props: {
