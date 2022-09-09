@@ -49,8 +49,8 @@ const InfoCard: React.FC<InfoCardProps> = ({
             {star}
           </p>
           <div>
-            <p className="text-lg font-semibold pb-2 lg:text-2xl">{price}</p>
-            <p className="text-right font-extralight">{total}</p>
+            <p className="text-lg font-semibold pb-2 lg:text-2xl">$ {price}</p>
+            <p className="text-right font-extralight">$ {total}</p>
           </div>
         </div>
       </div>
