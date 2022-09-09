@@ -7,16 +7,17 @@ import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
 import MapBox from "../components/MapBox";
 
-function Search({ searchResults }) {
+type SearchProps = {
+  searchResults: any;
+};
+
+const Search: React.FC<SearchProps> = ({ searchResults }) => {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuest } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
+  const formattedStartDate = format(new Date(startDate as any), "dd MMMM yy");
+  const formattedEndDate = format(new Date(endDate as any), "dd MMMM yy");
   const range = `${formattedStartDate} - ${formattedEndDate}`;
-
-  //console.log(searchResults);
-
   return (
     <div>
       <Head>
@@ -45,7 +46,7 @@ function Search({ searchResults }) {
             <p className="button">More filters</p>
           </div>
           <div className="flex flex-col">
-            {searchResults?.map((item) => (
+            {searchResults?.map((item: any) => (
               <InfoCard
                 key={item.img}
                 img={item.img}
@@ -66,14 +67,13 @@ function Search({ searchResults }) {
       <Footer />
     </div>
   );
-}
-
+};
 export default Search;
 
 export async function getServerSideProps() {
-  const searchResults = await fetch("https://links.papareact.com/isz").then(
-    (res) => res.json()
-  );
+  const searchResults = await fetch(
+    "https://sashenairbnbinfocardschema.herokuapp.com/v2/posts"
+  ).then((res) => res.json());
 
   return {
     props: {

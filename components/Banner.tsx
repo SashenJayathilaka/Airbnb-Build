@@ -1,17 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import banner from "../public/images/Jeannie-Phan-Illustration-Branding-Airbnb-Go-Near.jpg";
 
-function Banner() {
+type BannerProps = {};
+
+const Banner: React.FC<BannerProps> = () => {
   return (
     <div
       className="relative h-[300px] sm:h-[400px] lg:h-[500px]
     xl:h-[600px] 2xl:h-[700px]"
     >
-      <Image
-        src="https://drive.google.com/uc?export=download&id=1a5-s337r5SzlLAvmjwQjhtog8ljxAeG7"
-        layout="fill"
-        objectFit="cover"
-      />
+      <Image src={banner} layout="fill" objectFit="cover" />
       <div className="absolute top-1/2 w-full text-center">
         <p className="text-white font-bold text-sm sm:text-lg">
           Not sure where to go? Prefect,
@@ -26,6 +25,5 @@ function Banner() {
       </div>
     </div>
   );
-}
-
+};
 export default Banner;

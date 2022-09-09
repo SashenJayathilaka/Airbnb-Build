@@ -1,5 +1,5 @@
 {
-  "name": "airbnb-clone",
+  "name": "airbnb-build",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,19 +13,24 @@
     "@heroicons/react": "^1.0.6",
     "date-fns": "^2.29.2",
     "geolib": "^3.3.3",
-    "mapbox-gl": "^2.9.2",
+    "mapbox-gl": "^2.10.0",
     "next": "12.2.5",
-    "react": "^18.2.0",
+    "react": "18.2.0",
     "react-date-range": "^1.4.0",
     "react-dom": "18.2.0",
     "react-map-gl": "^7.0.19",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
+    "@types/node": "18.7.16",
+    "@types/react": "18.0.18",
+    "@types/react-date-range": "^1.4.4",
+    "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.8",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.2"
   }
 }
