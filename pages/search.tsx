@@ -72,7 +72,7 @@ export default Search;
 
 export async function getServerSideProps() {
   const searchResults = await fetch(
-    "https://sashenairbnbinfocardschema.herokuapp.com/v2/posts"
+    "https://airbnbsashen.herokuapp.com/info/posts"
   ).then((res) => res.json());
 
   return {
