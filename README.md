@@ -41,39 +41,40 @@
   </ul>
 </details>
 
+
 <br />
 
 <table>
     <tr>
         <td>
-<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="" width="40" height="40" /></a>
+<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="" width="30" height="30" /></a>
         </td>
                 <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="40" height="40" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="30" height="30" /></a>
         </td>
                         <td>
-<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Google" width="40" height="40" /></a>
+<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Google" width="30" height="30" /></a>
         </td>
                         <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="40" height="40" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
         </td>
                         <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="40" height="40" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#facebook"><img src="https://user-images.githubusercontent.com/99184393/181918664-569af962-756c-438c-b350-294f042e6f61.png" width="40" height="40" /></a>
+<a href="#facebook"><img src="https://user-images.githubusercontent.com/99184393/181918664-569af962-756c-438c-b350-294f042e6f61.png" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#google"><img src="https://user-images.githubusercontent.com/99184393/177785222-28bdbfaa-1f8d-4b20-b5c8-79c370d41622.png" alt="Google" width="40" height="40" /></a>
+<a href="#google"><img src="https://user-images.githubusercontent.com/99184393/177785222-28bdbfaa-1f8d-4b20-b5c8-79c370d41622.png" alt="Google" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392323-d590a743-f3e8-4397-8162-7f62da47ba9d.png" alt="" width="40" height="40" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392323-d590a743-f3e8-4397-8162-7f62da47ba9d.png" alt="" width="30" height="30" /></a>
         </td>
                                         <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392748-5144ae82-5ae1-4a24-a17f-db1af3e66df8.png" alt="" width="40" height="40" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392748-5144ae82-5ae1-4a24-a17f-db1af3e66df8.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="40"height="40"/></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="30"height="30"/></a>
         </td>
     </tr>
 </table>
