@@ -80,8 +80,6 @@
 </table>
 
 
-<br />
-
 ## 	:toolbox: Getting Started
 ### :bangbang: Prerequisites
 - Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
