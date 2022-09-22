@@ -1,20 +1,20 @@
-# Airbnb Clone with REACT.JS!
+# Twitter 2.0 with REACT.JS!
 
-<a href="https://airbnb-build-two.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
+<a href="https://twitterclone-gamma.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
-![](https://img.shields.io/github/forks/SashenJayathilaka/Airbnb-Build.svg)
-![](https://img.shields.io/github/stars/SashenJayathilaka/Airbnb-Build.svg)
-![](https://img.shields.io/github/issues/SashenJayathilaka/Airbnb-Build)
-![](https://img.shields.io/github/last-commit/SashenJayathilaka/Airbnb-Build)
+![](https://img.shields.io/github/forks/SashenJayathilaka/Twitter-2-0-Clone.svg)
+![](https://img.shields.io/github/stars/SashenJayathilaka/Twitter-2-0-Clone.svg)
+![](https://img.shields.io/github/issues/SashenJayathilaka/Twitter-2-0-Clone)
+![](https://img.shields.io/github/last-commit/SashenJayathilaka/Twitter-2-0-Clone)
 
 <!-- Screenshots -->
 ### :camera: Screenshots
 
 <div align="center">
-<a href="https://airbnb-build-two.vercel.app"><img  src='https://user-images.githubusercontent.com/99184393/189361896-7a23cdc8-5601-45a9-b733-5893314af2fd.gif' alt='image'/></a>
+<a href="https://twitterclone-gamma.vercel.app"><img width='800rem'  src='https://user-images.githubusercontent.com/99184393/183280055-9ab92299-5ca4-4865-b317-b2c0d2b77c23.png' alt='image'/></a>
 </div>
 
-## <a href="https://airbnb-build-two.vercel.app/" target="_blank">LIVE DEMO 💥</a>
+## <a href="https://twitterclone-gamma.vercel.app" target="_blank">LIVE DEMO 💥</a>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
@@ -29,18 +29,15 @@
     <li><a href="https://nextjs.org/">Next.js</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-        <li><a href="https://www.mapbox.com">Mapbox</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Backend (Api)</summary>
+<summary>Database</summary>
   <ul>
-    <li><a href="https://firebase.google.com">Node Js</a></li>
-        <li><a href="https://#/">mongodb</a></li>
+    <li><a href="https://www.sanity.io">Sanity</a></li>
   </ul>
 </details>
-
 
 <br />
 
@@ -62,43 +59,51 @@
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#facebook"><img src="https://user-images.githubusercontent.com/99184393/181918664-569af962-756c-438c-b350-294f042e6f61.png" width="30" height="30" /></a>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/183095729-0ae04014-a62c-4013-93ff-6861fbff308e.png" alt="" width="30" height="30" /></a>
         </td>
                                 <td>
-<a href="#google"><img src="https://user-images.githubusercontent.com/99184393/177785222-28bdbfaa-1f8d-4b20-b5c8-79c370d41622.png" alt="Google" width="30" height="30" /></a>
-        </td>
-                                <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392323-d590a743-f3e8-4397-8162-7f62da47ba9d.png" alt="" width="30" height="30" /></a>
-        </td>
-                                        <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/191392748-5144ae82-5ae1-4a24-a17f-db1af3e66df8.png" alt="" width="30" height="30" /></a>
-        </td>
-                                <td>
-<a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="30"height="30"/></a>
+<a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1200px-Twitter-logo.svg.png" alt="" width="30" height="30" /></a>
         </td>
     </tr>
 </table>
 
-
 ## 	:toolbox: Getting Started
 ### :bangbang: Prerequisites
 - Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
-- Mapbox <a href='https://www.mapbox.com'>HERE</a>
+- Sign up for a Sanity account <a href='https://www.sanity.io'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
-
-![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![](https://img.shields.io/badge/next.js-20232A?style=for-the-badge&logo=next.js&logoColor=61DAFB)
 
 <!-- Env Variables -->
 ### :key: Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`MAPBOX_KEY`
+`SANITY_API_TOKEN`
+
+`NEXT_PUBLIC_SANITY_PROJECT_ID`
+
+`NEXT_PUBLIC_SANITY_DATASET`
+
+`NEXT_PUBLIC_FIREBASE_API_KEY`
+
+`NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
+
+`NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+
+`NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+
+`NEXT_PUBLIC_FIREBASE_MESSAGING_SET`
+
+`NEXT_PUBLIC_FIREBASE_APP_ID`
+
+`NEXT_PUBLIC_BASE_URL`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### :gear: Installation
+
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/next.js-20232A?style=for-the-badge&logo=next.js&logoColor=61DAFB)
 
 Install my-project with npm
 ```
@@ -112,6 +117,7 @@ Install dependencies
 
 ### :test_tube: Install Tailwind CSS with Next.js
 #### Install Tailwind CSS
+![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both ``tailwind.config.js`` and ``postcss.config.js``.
 
@@ -145,23 +151,23 @@ Add the ``@tailwind`` directives for each of Tailwind’s layers to your ``./sty
 ```
 Install dependencies
 
-<a href="https://github.com/SashenJayathilaka/Airbnb-Build/blob/master/package.json" target="_blank">🔶 Dependency Info</a>
+<a href="https://github.com/SashenJayathilaka/Twitter-2-0-Clone/blob/master/package.json" target="_blank">🔶 Dependency Info</a>
 
 <!-- Run Locally -->
 ### :running: Run Locally
 
+![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
 Clone the project
 
 ```bash
-  git clone https://github.com/SashenJayathilaka/Airbnb-Build.git
+  git clone https://github.com/SashenJayathilaka/Twitter-2-0-Clone.git
 ```
 
 Install dependencies
 
 ```bash
   npm install
-  or
-  yarn install
 ```
 Start the server
 
@@ -209,4 +215,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Sashen - [@twitter_handle](https://twitter.com/SashenHasinduJ) - sashenjayathilaka95@gmail.com
 
-Project Link: [https://github.com/SashenJayathilaka/Airbnb-Build.git](https://github.com/SashenJayathilaka/Airbnb-Build.git)
+Project Link: [https://twitterclone-gamma.vercel.app](https://twitterclone-gamma.vercel.app)
