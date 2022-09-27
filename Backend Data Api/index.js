@@ -16,8 +16,7 @@ app.use((req, res, next) => {
 });
 
 // Db config
-const connection_Url =
-  "mongodb+srv://sashen:EHR1DI20mlQ1unPT@cluster0.w9dh9h6.mongodb.net/?retryWrites=true&w=majority";
+const connection_Url = process.env.MONOGODB_URL
 
 mongoose.connect(connection_Url, {
   useNewUrlParser: true,
