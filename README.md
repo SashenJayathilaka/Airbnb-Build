@@ -1,11 +1,50 @@
-# Airbnb Clone with REACT.JS!
+<div align="center">
 
+  <img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="logo" width="200" height="auto" />
+  
+# Airbnb Clone with REACT.JS!
+  
+  <p>
+  Airbnb REACT.JS (Mapbox Integration - Next.js, Tailwind CSS, Maps)
+  </p>
+  
+<!-- Badges -->
 <a href="https://airbnb-build-two.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
 ![](https://img.shields.io/github/forks/SashenJayathilaka/Airbnb-Build.svg)
 ![](https://img.shields.io/github/stars/SashenJayathilaka/Airbnb-Build.svg)
 ![](https://img.shields.io/github/issues/SashenJayathilaka/Airbnb-Build)
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Airbnb-Build)
+
+<h4>
+    <a href="https://airbnb-build-two.vercel.app">View Demo</a>
+  <span> · </span>
+    <a href="https://github.com/SashenJayathilaka/Airbnb-Build/blob/master/README.md">Documentation</a>
+  <span> · </span>
+    <a href="https://github.com/SashenJayathilaka/Airbnb-Build/issues">Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/SashenJayathilaka/Airbnb-Build/issues">Request Feature</a>
+  </h4>
+</div>
+
+<br />
+
+<!-- Table of Contents -->
+## :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+  * [Screenshots](#camera-screenshots)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Environment Variables](#key-environment-variables)
+- [Getting Started](#toolbox-getting-started)
+  * [Prerequisites](#bangbang-prerequisites)
+  * [Installation](#gear-installation)
+  * [Run Locally](#running-run-locally)
+  * [Deployment](#triangular_flag_on_post-deployment)
+- [Contact](#handshake-contact)
+
+<!-- About the Project -->
+## :star2: About the Project
 
 <!-- Screenshots -->
 ### :camera: Screenshots
