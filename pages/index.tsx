@@ -72,11 +72,11 @@ export default Home;
 
 export async function getServerSideProps() {
   const exploreData = await fetch(
-    "https://airbnbsashen.herokuapp.com/small/posts"
+    "https://airbnbsashenhsindu.herokuapp.com/small/posts"
   ).then((res) => res.json());
 
   const cardData = await fetch(
-    "https://airbnbsashen.herokuapp.com/medium/posts"
+    "https://airbnbsashenhsindu.herokuapp.com/medium/posts"
   ).then((res) => res.json());
 
   return {
