@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { HeartIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
 
@@ -23,7 +24,13 @@ const InfoCard: React.FC<InfoCardProps> = ({
   total,
 }) => {
   return (
-    <div
+    <motion.div
+      initial={{
+        x: -200,
+        opacity: 0,
+      }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
       className="flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80
     hover:shadow-lg transition duration-200 ease-out first:border-t"
     >
@@ -49,12 +56,14 @@ const InfoCard: React.FC<InfoCardProps> = ({
             {star}
           </p>
           <div>
-            <p className="text-lg font-semibold pb-2 lg:text-2xl">$ {price} / night</p>
+            <p className="text-lg font-semibold pb-2 lg:text-2xl">
+              $ {price} / night
+            </p>
             <p className="text-right font-extralight">$ {total}</p>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default InfoCard;

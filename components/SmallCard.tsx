@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type SmallCardProps = {
   img: any;
@@ -9,7 +10,13 @@ type SmallCardProps = {
 
 const SmallCard: React.FC<SmallCardProps> = ({ img, location, distance }) => {
   return (
-    <div
+    <motion.div
+      initial={{
+        x: 200,
+        opacity: 0,
+      }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
       className="flex items-center m-2 mt-5 space-x-4 rounded-xl cursor-pointer
     hover:bg-gray-100 hover:scale-105 transition transform duration-200
     ease-out "
@@ -22,7 +29,7 @@ const SmallCard: React.FC<SmallCardProps> = ({ img, location, distance }) => {
         <h2>{location}</h2>
         <h3 className="text-gray-500">{distance}</h3>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default SmallCard;

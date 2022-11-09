@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import {
   SearchIcon,
@@ -87,13 +88,18 @@ const Header: React.FC<HeaderProps> = ({ placeholder }) => {
         <p className="hidden md:inline cursor-pointer">Become a host</p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
 
-        <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
+        <div className="flex items-center space-x-2 border-2 p-2 rounded-full cursor-pointer">
           <MenuIcon className="h-6" />
           <UserCircleIcon className="h-6" />
         </div>
       </div>
       {searchInput && (
-        <div className="flex flex-col col-span-3 mx-auto">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col col-span-3 mx-auto"
+        >
           <DateRangePicker
             ranges={[selectionRange]}
             minDate={new Date()}
@@ -121,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ placeholder }) => {
               Search
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
     </header>
   );

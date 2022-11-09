@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type LargeCardProps = {
   img: any;
@@ -15,7 +16,15 @@ const LargeCard: React.FC<LargeCardProps> = ({
   buttonText,
 }) => {
   return (
-    <section className="relative py-16 cursor-pointer">
+    <motion.div
+      initial={{
+        x: 200,
+        opacity: 0,
+      }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      className="relative py-16 cursor-pointer"
+    >
       <div className="relative h-96 min-w-[300px]">
         <Image
           src={img}
@@ -31,7 +40,7 @@ const LargeCard: React.FC<LargeCardProps> = ({
           {buttonText}
         </button>
       </div>
-    </section>
+    </motion.div>
   );
 };
 export default LargeCard;
