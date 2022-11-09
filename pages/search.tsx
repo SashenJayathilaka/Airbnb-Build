@@ -69,13 +69,9 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
         </section>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className="box hidden xl:inline-flex xl:min-w-[600px]"
         >
           <MapBox searchResults={searchResults} />
