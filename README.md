@@ -182,12 +182,16 @@ Clone the project
   git clone https://github.com/SashenJayathilaka/Airbnb-Build.git
 ```
 
+change directory
+
+```bash
+  cd Airbnb-Build
+```
+
 Install dependencies
 
 ```bash
   npm install
-  or
-  yarn install
 ```
 Start the server
 
