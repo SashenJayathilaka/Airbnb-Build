@@ -40,7 +40,7 @@ const Home = ({}: HomeProps) => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
           xl:grid-cols-4"
           >
-            {smallCardData.map((item: any) => (
+            {smallCardData?.map((item: any) => (
               <SmallCard
                 key={item.img}
                 img={item.img}
@@ -56,7 +56,7 @@ const Home = ({}: HomeProps) => {
             className="flex space-x-3 overflow-scroll scrollbar-hide p-3
           -ml-3"
           >
-            {mediumCarData.map((item: any) => (
+            {mediumCarData?.map((item: any) => (
               <MediumCard key={item.img} img={item.img} title={item.title} />
             ))}
           </div>

@@ -52,7 +52,7 @@ const Search: React.FC<SearchProps> = () => {
             <p className="button">More filters</p>
           </div>
           <div className="flex flex-col">
-            {infoCardData.map((item: any) => (
+            {infoCardData?.map((item: any) => (
               <InfoCard
                 key={item.img}
                 img={item.img}
