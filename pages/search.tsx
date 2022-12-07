@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
+import Head from "next/head";
+import React from "react";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { useRouter } from "next/router";
 import { format } from "date-fns";
+import { useRouter } from "next/router";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
 import MapBox from "../components/MapBox";
+import { infoCardData } from "../utils/info";
 
-type SearchProps = {
-  searchResults: any;
-};
+type SearchProps = {};
 
-const Search: React.FC<SearchProps> = ({ searchResults }) => {
+const Search: React.FC<SearchProps> = () => {
   const router = useRouter();
   const { location, startDate, endDate, noOfGuest } = router.query;
 
@@ -53,7 +52,7 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
             <p className="button">More filters</p>
           </div>
           <div className="flex flex-col">
-            {searchResults?.map((item: any) => (
+            {infoCardData.map((item: any) => (
               <InfoCard
                 key={item.img}
                 img={item.img}
@@ -74,7 +73,7 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
           viewport={{ once: true }}
           className="box hidden xl:inline-flex xl:min-w-[600px]"
         >
-          <MapBox searchResults={searchResults} />
+          <MapBox searchResults={infoCardData} />
         </motion.div>
       </main>
       <Footer />
@@ -82,15 +81,3 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
   );
 };
 export default Search;
-
-export async function getServerSideProps() {
-  const searchResults = await fetch(
-    "https://airbnbsashenhsindu.herokuapp.com/info/posts"
-  ).then((res) => res.json());
-
-  return {
-    props: {
-      searchResults,
-    },
-  };
-}

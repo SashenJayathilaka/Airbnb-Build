@@ -5,7 +5,7 @@ import InfoCard from "./InfoCard.js";
 import SmallCard from "./SmallCard.js";
 
 const app = express();
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 3000;
 
 // middleware
 app.use(express.json());
@@ -16,8 +16,7 @@ app.use((req, res, next) => {
 });
 
 // Db config
-const connection_Url =
-  "mongodb+srv://sashen:EHR1DI20mlQ1unPT@cluster0.w9dh9h6.mongodb.net/?retryWrites=true&w=majority";
+const connection_Url = process.env.MONGODB_URL;
 
 mongoose
   .connect(connection_Url, {
