@@ -8,13 +8,12 @@ import LargeCard from "../components/LargeCard";
 import MediumCard from "../components/MediumCard";
 import SmallCard from "../components/SmallCard";
 import smallCardImage from "/public/images/3643ec104098983.5f5b5ea7c10c5.png";
+import { mediumCarData } from "../utils/medium";
+import { smallCardData } from "../utils/small";
 
-type HomeProps = {
-  exploreData: any;
-  cardData: any;
-};
+type HomeProps = {};
 
-const Home = ({ exploreData, cardData }: HomeProps) => {
+const Home = ({}: HomeProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -41,7 +40,7 @@ const Home = ({ exploreData, cardData }: HomeProps) => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
           xl:grid-cols-4"
           >
-            {exploreData?.map((item: any) => (
+            {smallCardData.map((item: any) => (
               <SmallCard
                 key={item.img}
                 img={item.img}
@@ -57,7 +56,7 @@ const Home = ({ exploreData, cardData }: HomeProps) => {
             className="flex space-x-3 overflow-scroll scrollbar-hide p-3
           -ml-3"
           >
-            {cardData?.map((item: any) => (
+            {mediumCarData.map((item: any) => (
               <MediumCard key={item.img} img={item.img} title={item.title} />
             ))}
           </div>
@@ -75,20 +74,3 @@ const Home = ({ exploreData, cardData }: HomeProps) => {
 };
 
 export default Home;
-
-export async function getServerSideProps() {
-  const exploreData = await fetch(
-    "https://airbnbsashenhsindu.herokuapp.com/small/posts"
-  ).then((res) => res.json());
-
-  const cardData = await fetch(
-    "https://airbnbsashenhsindu.herokuapp.com/medium/posts"
-  ).then((res) => res.json());
-
-  return {
-    props: {
-      exploreData,
-      cardData,
-    },
-  };
-}
