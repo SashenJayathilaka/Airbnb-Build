@@ -1,4 +1,4 @@
-export const mediumCarData = [
+const mediumCarData = [
   {
     _id: "631c2824747442c0d65039df",
     img: "https://i.postimg.cc/HLSYdSyS/Cheung-Twentynine-Palms-18332523-0446-HLP-169crop.webp",
@@ -42,3 +42,5 @@ export const mediumCarData = [
     __v: 0,
   },
 ];
+
+export default mediumCarData;

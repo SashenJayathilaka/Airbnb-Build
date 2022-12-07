@@ -1,4 +1,4 @@
-export const smallCardData = [
+const smallCardData = [
   {
     _id: "631b14cc00036d4bfd1fcdeb",
     img: "https://i.postimg.cc/LsbVVg8s/london-tower-bridge-across-the-river-thames-famous-landmark-building-in-united-kingdom-illustration.webp",
@@ -64,3 +64,5 @@ export const smallCardData = [
     __v: 0,
   },
 ];
+
+export default smallCardData;

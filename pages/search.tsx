@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
 import MapBox from "../components/MapBox";
-import { infoCardData } from "../utils/info";
+import infoCardData from "../utils/info";
 
 type SearchProps = {};
 
