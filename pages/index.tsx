@@ -9,121 +9,12 @@ import MediumCard from "../components/MediumCard";
 import SmallCard from "../components/SmallCard";
 import smallCardImage from "/public/images/3643ec104098983.5f5b5ea7c10c5.png";
 
-const smallCardData = [
-  {
-    _id: "631b14cc00036d4bfd1fcdeb",
-    img: "https://i.postimg.cc/LsbVVg8s/london-tower-bridge-across-the-river-thames-famous-landmark-building-in-united-kingdom-illustration.webp",
-    distance: "$189/night avg",
-    location: "London",
-    time: "2022-09-10T05:57:10.928Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcded",
-    img: "https://i.postimg.cc/6pZL2rP9/summer-swimming-pool-jpeg-pagespeed-ce-H1808fl-Ljp.jpg",
-    distance: "$98/night avg",
-    location: "Copenhagen",
-    time: "2022-09-10T05:57:10.923Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdec",
-    img: "https://i.postimg.cc/8kHfJJ52/istockphoto-626586892-612x612.jpg",
-    distance: "$209/night avg",
-    location: "Manchester",
-    time: "2022-09-10T05:57:10.930Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdf2",
-    img: "https://i.postimg.cc/ZRwrtVWL/summer-art-illustration-jpg-pagespeed-ce-knat-Q9zw-UX.jpg",
-    distance: "$78/night avg",
-    location: "Charleston",
-    time: "2022-09-10T05:57:10.935Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdef",
-    img: "https://i.postimg.cc/1zpHTG0W/summer-island.jpg",
-    distance: "$108/night avg",
-    location: "Florence",
-    time: "2022-09-10T05:57:10.937Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdee",
-    img: "https://i.postimg.cc/B6nKgHmP/perfect-isolation-illustration-tubikarts-jpg-pagespeed-ce-y-Fs3f-Xk-Kb.jpg",
-    distance: "$78/night avg",
-    location: "Montreal",
-    time: "2022-09-10T05:57:10.938Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdf1",
-    img: "https://i.postimg.cc/XYYjBcLT/tumblr-oahhh5muxc1qlioplo1-1280.jpg",
-    distance: "$178/night avg",
-    location: "Saint Petersburg",
-    time: "2022-09-10T05:57:10.931Z",
-    __v: 0,
-  },
-  {
-    _id: "631b14cc00036d4bfd1fcdf0",
-    img: "https://i.postimg.cc/R0z1c3rw/summer-landscape-sea-jpeg-pagespeed-ce-h-TFufen-Rj-C.jpg",
-    distance: "$123/night avg",
-    location: "Geneva",
-    time: "2022-09-10T05:57:10.933Z",
-    __v: 0,
-  },
-];
+type HomeProps = {
+  exploreData: any;
+  cardData: any;
+};
 
-const mediumCarData = [
-  {
-    _id: "631c2824747442c0d65039df",
-    img: "https://i.postimg.cc/HLSYdSyS/Cheung-Twentynine-Palms-18332523-0446-HLP-169crop.webp",
-    title: "Simplifying the check-in process",
-    time: "2022-09-10T06:01:08.917Z",
-    __v: 0,
-  },
-  {
-    _id: "631c2824747442c0d65039e1",
-    img: "https://i.postimg.cc/vmMmhgrs/image16.webp",
-    title: "Making your home ready for guests",
-    time: "2022-09-10T06:01:08.926Z",
-    __v: 0,
-  },
-  {
-    _id: "631c2824747442c0d65039e0",
-    img: "https://i.postimg.cc/L60MbqjP/2-UV408-PU6-DPYG.webp",
-    title: "Thoughtful details guests love",
-    time: "2022-09-10T06:01:08.924Z",
-    __v: 0,
-  },
-  {
-    _id: "631c2824747442c0d65039e4",
-    img: "https://i.postimg.cc/qvzQ1qGz/2-UV408-WEJB1-AV.webp",
-    title: "Simplify your communication",
-    time: "2022-09-10T06:01:08.932Z",
-    __v: 0,
-  },
-  {
-    _id: "631c2824747442c0d65039e3",
-    img: "https://i.postimg.cc/htW6Q9nK/2-UV408-TAS5-L93.webp",
-    title: "Keeping your space clean",
-    time: "2022-09-10T06:01:08.928Z",
-    __v: 0,
-  },
-  {
-    _id: "631c2824747442c0d65039e2",
-    img: "https://i.postimg.cc/rsBzcdxf/trump-hotel-chicago-illinois-usa.webp",
-    title: "The pros of spending a night in your space",
-    time: "2022-09-10T06:01:08.927Z",
-    __v: 0,
-  },
-];
-
-type HomeProps = {};
-
-const Home = ({}: HomeProps) => {
+const Home = ({ exploreData, cardData }: HomeProps) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -150,7 +41,7 @@ const Home = ({}: HomeProps) => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
           xl:grid-cols-4"
           >
-            {smallCardData?.map((item: any) => (
+            {exploreData?.map((item: any) => (
               <SmallCard
                 key={item.img}
                 img={item.img}
@@ -166,7 +57,7 @@ const Home = ({}: HomeProps) => {
             className="flex space-x-3 overflow-scroll scrollbar-hide p-3
           -ml-3"
           >
-            {mediumCarData?.map((item: any) => (
+            {cardData?.map((item: any) => (
               <MediumCard key={item.img} img={item.img} title={item.title} />
             ))}
           </div>
@@ -184,3 +75,20 @@ const Home = ({}: HomeProps) => {
 };
 
 export default Home;
+
+export async function getServerSideProps() {
+  const exploreData = await fetch(
+    "https://airbnbsashen.herokuapp.com/small/posts"
+  ).then((res) => res.json());
+
+  const cardData = await fetch(
+    "https://airbnbsashen.herokuapp.com/medium/posts"
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      exploreData,
+      cardData,
+    },
+  };
+}
