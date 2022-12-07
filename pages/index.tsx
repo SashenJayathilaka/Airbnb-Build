@@ -8,8 +8,8 @@ import LargeCard from "../components/LargeCard";
 import MediumCard from "../components/MediumCard";
 import SmallCard from "../components/SmallCard";
 import smallCardImage from "/public/images/3643ec104098983.5f5b5ea7c10c5.png";
-import { mediumCarData } from "../utils/medium";
-import { smallCardData } from "../utils/small";
+import mediumCarData from "../utils/mediumCarData";
+import smallCardData from "../utils/smallCardData";
 
 type HomeProps = {};
 

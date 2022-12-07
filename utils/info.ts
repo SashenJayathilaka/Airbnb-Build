@@ -1,4 +1,4 @@
-export const infoCardData = [
+const infoCardData = [
   {
     _id: "631c28b7ad9638f542c4820a",
     img: "https://i.postimg.cc/pXdGBLT7/19414d6a-8471-4088-8ea3-ba034acc87ca.webp",
@@ -150,3 +150,5 @@ export const infoCardData = [
     __v: 0,
   },
 ];
+
+export default infoCardData;
