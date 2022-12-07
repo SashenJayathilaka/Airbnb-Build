@@ -74,7 +74,7 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
           viewport={{ once: true }}
           className="box hidden xl:inline-flex xl:min-w-[600px]"
         >
-          <MapBox searchResults={infoCardData} />
+        <MapBox searchResults={searchResults} />
         </motion.div>
       </main>
       <Footer />
