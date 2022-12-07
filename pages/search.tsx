@@ -74,7 +74,7 @@ const Search: React.FC<SearchProps> = ({ searchResults }) => {
           viewport={{ once: true }}
           className="box hidden xl:inline-flex xl:min-w-[600px]"
         >
-        <MapBox searchResults={searchResults} />
+          <MapBox searchResults={searchResults} />
         </motion.div>
       </main>
       <Footer />
@@ -85,7 +85,7 @@ export default Search;
 
 export async function getServerSideProps() {
   const searchResults = await fetch(
-    "https://airbnbsashen.herokuapp.com/info/posts"
+    "https://hasinduperera12.github.io/Application-Programming-Interface/info.json"
   ).then((res) => res.json());
 
   return {
