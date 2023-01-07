@@ -9,7 +9,7 @@
   </p>
   
 <!-- Badges -->
-<a href="https://airbnb-build-two.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
+<a href="https://airbnb-sclone.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
 ![](https://img.shields.io/github/forks/SashenJayathilaka/Airbnb-Build.svg)
 ![](https://img.shields.io/github/stars/SashenJayathilaka/Airbnb-Build.svg)
@@ -17,7 +17,7 @@
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Airbnb-Build)
 
 <h4>
-    <a href="https://airbnb-build-two.vercel.app">View Demo</a>
+    <a href="https://airbnb-sclone.vercel.app">View Demo</a>
   <span> · </span>
     <a href="https://github.com/SashenJayathilaka/Airbnb-Build/blob/master/README.md">Documentation</a>
   <span> · </span>
@@ -50,10 +50,10 @@
 ### :camera: Screenshots
 
 <div align="center">
-<a href="https://airbnb-build-two.vercel.app"><img  src='https://user-images.githubusercontent.com/99184393/189361896-7a23cdc8-5601-45a9-b733-5893314af2fd.gif' alt='image'/></a>
+<a href="https://airbnb-sclone.vercel.app"><img  src='https://user-images.githubusercontent.com/99184393/189361896-7a23cdc8-5601-45a9-b733-5893314af2fd.gif' alt='image'/></a>
 </div>
 
-## <a href="https://airbnb-build-two.vercel.app/" target="_blank">LIVE DEMO 💥</a>
+## <a href="https://airbnb-sclone.vercel.app" target="_blank">LIVE DEMO 💥</a>
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
@@ -244,5 +244,5 @@ Project Link: [https://github.com/SashenJayathilaka/Airbnb-Build.git](https://gi
 
 <br />
 
-<a href="https://airbnb-build-two.vercel.app" target="_blank">![image](https://user-images.githubusercontent.com/99184393/189365002-329864dd-30b1-4867-8b98-1419a31c5c96.png)</a>
+<a href="https://airbnb-sclone.vercel.app" target="_blank">![image](https://user-images.githubusercontent.com/99184393/189365002-329864dd-30b1-4867-8b98-1419a31c5c96.png)</a>
 
