@@ -3,12 +3,13 @@
 import useLoginModel from "@/hook/useLoginModal";
 import useRegisterModal from "@/hook/useRegisterModal";
 import useRentModal from "@/hook/useRentModal";
-import { useRouter } from "next/navigation";
-
 import { SafeUser } from "@/types";
 import { signOut } from "next-auth/react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
 
@@ -50,7 +51,17 @@ function UserMenu({ currentUser }: Props) {
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
-            <Avatar src={currentUser?.image!} userName={currentUser?.name} />
+            {currentUser ? (
+              <Avatar src={currentUser?.image!} userName={currentUser?.name} />
+            ) : (
+              <Image
+                className="rounded-full"
+                height="30"
+                width="30"
+                alt="Avatar"
+                src="/assets/avatar.jfif"
+              />
+            )}
           </div>
         </div>
       </div>
