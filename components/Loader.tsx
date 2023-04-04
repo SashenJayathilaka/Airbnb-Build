@@ -11,7 +11,7 @@ function Loader({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className="flex justify-center items-center h-screen"
+      className="h-[70vh] flex flex-col justify-center items-center"
     >
       <div className="px-4 py-12">
         <div className="rounded relative bg-white py-12">
