@@ -132,7 +132,6 @@ Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth,
 
 ### :bangbang: Prerequisites
 
-- Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 - Sign up for a cloudinary account <a href='https://cloudinary.com/'>HERE</a>
 - Sign up for a Google Cloud Platform <a href='https://console.cloud.google.com/'>HERE</a>
