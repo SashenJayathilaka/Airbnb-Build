@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .button {
-    @apply px-4 py-2 border rounded-full cursor-pointer 
-            hover:shadow-lg active:scale-95 active:bg-gray-100
-            transition transform duration-100 ease-out;
-  }
+html,
+body,
+:root{
+    height: 100%;
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+    z-index: 0 !important;
+}
+
+.rdrMonth {
+    width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+    font-size: 16px !important;
+    width: 100% !important;
 }
