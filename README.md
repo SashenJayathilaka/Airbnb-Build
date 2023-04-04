@@ -1,11 +1,11 @@
 <div align="center">
 
-  <img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="logo" width="200" height="auto" />
+  <img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="logo" width="250" height="auto" />
   
 # Airbnb Clone with REACT.JS!
   
   <p>
-  Airbnb REACT.JS (Mapbox Integration - Next.js, Tailwind CSS, Maps)
+Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth, Framer-motionSocial, Login (Google and Github), Image upload, Cloudinary CDN, Location selection, Map component, Country autocomplete, Fetching listings with server components
   </p>
   
 <!-- Badges -->
@@ -17,7 +17,7 @@
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Airbnb-Build)
 
 <h4>
-    <a href="https://airbnb-sclone.vercel.app">View Demo</a>
+    <a href="https://abproject-sclone.vercel.app">View Demo</a>
   <span> · </span>
     <a href="https://github.com/SashenJayathilaka/Airbnb-Build/blob/master/README.md">Documentation</a>
   <span> · </span>
@@ -81,14 +81,15 @@
     <li><a href="https://nextjs.org/">Next.js</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://www.prisma.io">Prisma</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Backend (Api)</summary>
+<summary>Database</summary>
   <ul>
-    <li><a href="https://firebase.google.com">Node Js</a></li>
-        <li><a href="https://firebase.google.com">mongodb</a></li>
+  <li><a href="https://firebase.google.com">mongodb</a></li>
+  <li><a href="https://cloudinary.com/">cloudinary</a></li>
   </ul>
 </details>
 
@@ -103,10 +104,10 @@
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="30" height="30" /></a>
         </td>
                         <td>
-<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Google" width="30" height="30" /></a>
-        </td>
-                        <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
+        </td>
+                              <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/181918664-569af962-756c-438c-b350-294f042e6f61.png" alt="" width="30" height="30" /></a>
         </td>
                         <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
@@ -114,8 +115,18 @@
                                 <td>
 <a href="#"><img src="https://user-images.githubusercontent.com/99184393/185779974-a31a9f47-f8d3-42ea-b7f8-4a2971774615.png" alt="" width="30"height="30"/></a>
         </td>
+                                      <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/229775276-a7cb148b-7fbd-4334-a07f-f2223bc49f62.png" alt="" width="30"height="30"/></a>
+        </td>
+      <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/204170976-0e5c6e2a-2b41-483d-adbd-d5d1e40b8d15.png" alt="" width="30"height="30"/></a>
+        </td>
+        <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/214867309-7b59fa0e-c872-484e-bc8f-462896c54d2a.png" alt="" height="30"/></a>
+        </td>
     </tr>
 </table>
+
 
 ## :toolbox: Getting Started
 
@@ -123,6 +134,9 @@
 
 - Sign up for a Firebase account <a href='https://firebase.google.com'>HERE</a>
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
+- Sign up for a cloudinary account <a href='https://cloudinary.com/'>HERE</a>
+- Sign up for a Google Cloud Platform <a href='https://console.cloud.google.com/'>HERE</a>
+- Sign up for a Meta for Developers <a href='https://developers.facebook.com'>HERE</a>
 
 <!-- Env Variables -->
 
@@ -130,7 +144,22 @@
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`MAPBOX_KEY`
+`DATABASE_URL`
+
+`GOOGLE_CLIENT_ID`
+
+`GOOGLE_CLIENT_SECRET`
+
+`FACEBOOK_ID`
+
+`FACEBOOK_SECRET`
+
+`NEXTAUTH_SECRET`
+
+`NEXTAUTH_URL`
+
+`NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -142,7 +171,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Install my-project with npm
 
 ```
-npx create-next-app@latest --ts my-project
+npx create-next-app@latest my-project --typescript --eslint
 ```
 
 ```
@@ -172,11 +201,16 @@ npx tailwindcss init -p
 Add the paths to all of your template files in your `tailwind.config.js` file.
 <br>
 
-```
+```js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -189,7 +223,7 @@ module.exports = {
 
 Add the `@tailwind` directives for each of Tailwind’s layers to your `./styles/globals.css` file.
 
-```
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -274,4 +308,10 @@ Project Link: [https://github.com/SashenJayathilaka/Airbnb-Build.git](https://gi
 
 <br />
 
-<a href="https://airbnb-sclone.vercel.app" target="_blank">![image](https://user-images.githubusercontent.com/99184393/189365002-329864dd-30b1-4867-8b98-1419a31c5c96.png)</a>
+<div align="center">
+<a href="https://airbnb-sclone.vercel.app"><img  src='https://user-images.githubusercontent.com/99184393/229773559-72e7f64a-361d-4285-976a-00a8919dd783.png' alt='image'/></a>
+</div>
+
+<br />
+
+<div align="center">Don't forget to leave a star ⭐️</div>
