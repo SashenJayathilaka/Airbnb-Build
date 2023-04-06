@@ -3,13 +3,13 @@
 import useLoginModel from "@/hook/useLoginModal";
 import useRegisterModal from "@/hook/useRegisterModal";
 import useRentModal from "@/hook/useRentModal";
-import { SafeUser } from "@/types";
-import { signOut } from "next-auth/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
+import { SafeUser } from "@/types";
+import { signOut } from "next-auth/react";
 import { useCallback, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
 
@@ -59,7 +59,7 @@ function UserMenu({ currentUser }: Props) {
                 height="30"
                 width="30"
                 alt="Avatar"
-                src="/assets/avatar.jfif"
+                src="/assets/avatar.png"
               />
             )}
           </div>
