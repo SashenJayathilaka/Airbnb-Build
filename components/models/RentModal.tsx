@@ -132,7 +132,7 @@ function RentModal({}: Props) {
         title="Which of these best describes your place?"
         subtitle="Pick a category"
       />
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[50vh] overflow-y-auto scrollbar-thin scrollbar-thumb-[#FF5A5F]">
         {categories.map((item, index) => (
           <div key={index} className="col-span-1">
             <CategoryInput
