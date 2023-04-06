@@ -33,6 +33,8 @@
     "react-leaflet": "^4.2.1",
     "react-select": "^5.7.2",
     "react-toastify": "^9.1.2",
+    "react-world-flags": "^1.5.1",
+    "tailwind-scrollbar": "^3.0.0",
     "typescript": "5.0.3",
     "world-countries": "^4.0.0",
     "zustand": "^4.3.7"
@@ -41,6 +43,7 @@
     "@types/bcrypt": "^5.0.0",
     "@types/leaflet": "^1.9.3",
     "@types/react-date-range": "^1.4.4",
+    "@types/react-world-flags": "^1.4.2",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "prisma": "^4.12.0",
