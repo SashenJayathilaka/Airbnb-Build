@@ -88,8 +88,8 @@ Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth,
 <details>
 <summary>Database</summary>
   <ul>
-  <li><a href="https://firebase.google.com">mongodb</a></li>
-  <li><a href="https://cloudinary.com/">cloudinary</a></li>
+  <li><a href="https://firebase.google.com">Mongodb</a></li>
+  <li><a href="https://cloudinary.com/">Cloudinary</a></li>
   </ul>
 </details>
 
@@ -133,9 +133,10 @@ Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth,
 ### :bangbang: Prerequisites
 
 - Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
-- Sign up for a cloudinary account <a href='https://cloudinary.com/'>HERE</a>
+- Sign up for a Cloudinary account <a href='https://cloudinary.com/'>HERE</a>
 - Sign up for a Google Cloud Platform <a href='https://console.cloud.google.com/'>HERE</a>
 - Sign up for a Meta for Developers <a href='https://developers.facebook.com'>HERE</a>
+- Get Lookup APi Key <a href='https://extreme-ip-lookup.com/'>HERE</a>
 
 <!-- Env Variables -->
 
@@ -158,6 +159,8 @@ To run this project, you will need to add the following environment variables to
 `NEXTAUTH_URL`
 
 `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`
+
+`NEXT_PUBLIC_LOOKUP_KEY`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
