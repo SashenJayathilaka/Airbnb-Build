@@ -1,12 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ClientOnly from "./ClientOnly";
 
 type Props = {};
 
 function Footer({}: Props) {
+  const [country, setCountry] = useState("United States");
+
+  useEffect(() => {
+    fetch(
+      `https://extreme-ip-lookup.com/json/?key=${process.env.NEXT_PUBLIC_LOOKUP_KEY}`
+    )
+      .then((res) => res.json())
+      .then((data) => setCountry(data.country));
+  }, []);
+
   return (
     <ClientOnly>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 px-32 py-14 bg-gray-100 text-gray-600">
@@ -71,6 +81,7 @@ function Footer({}: Props) {
           <p>Explore hosting resources</p>
           <p>How to host responsibly</p>
         </motion.div>
+        <p className="text-sm">{country}</p>
       </div>
     </ClientOnly>
   );
