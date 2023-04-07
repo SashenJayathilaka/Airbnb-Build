@@ -2,12 +2,13 @@
 
 import L from "leaflet";
 import React from "react";
-import { MapContainer, Marker, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
+import Flag from "react-world-flags";
 
 // @ts-ignore
 delete L.Icon.Default.prototype._getIconUrl;
@@ -19,9 +20,10 @@ L.Icon.Default.mergeOptions({
 
 type Props = {
   center?: number[];
+  locationValue?: string;
 };
 
-function Map({ center }: Props) {
+function Map({ center, locationValue }: Props) {
   return (
     <MapContainer
       center={(center as L.LatLngExpression) || [51, -0.09]}
@@ -33,7 +35,21 @@ function Map({ center }: Props) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      {center && <Marker position={center as L.LatLngExpression} />}
+      {locationValue ? (
+        <>
+          {center && (
+            <Marker position={center as L.LatLngExpression}>
+              <Popup>
+                <div className="flex justify-center items-center animate-bounce">
+                  <Flag code={locationValue} className="w-10" />
+                </div>
+              </Popup>
+            </Marker>
+          )}
+        </>
+      ) : (
+        <>{center && <Marker position={center as L.LatLngExpression} />}</>
+      )}
     </MapContainer>
   );
 }

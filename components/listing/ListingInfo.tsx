@@ -7,6 +7,8 @@ import React from "react";
 import { IconType } from "react-icons";
 import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
+import Sleep from "../Sleep";
+import Offers from "../Offers";
 
 const Map = dynamic(() => import("../Map"), {
   ssr: false,
@@ -62,9 +64,27 @@ function ListingInfo({
         />
       )}
       <hr />
+      <div className="flex flex-col">
+        <p className="text-4xl font-bold text-[#FF5A5F]">
+          air<span className="text-black">cover</span>
+        </p>
+        <p className="text-neutral-500 pt-3">
+          Every booking includes free protection from Host cancellations,
+          listing inaccuracies, and other issues like trouble checking in.
+        </p>
+        <p className="text-black font-bold underline pt-3 cursor-pointer">
+          Learn more
+        </p>
+      </div>
+      <hr />
       <p className="text-lg font-light text-neutral-500">{description}</p>
       <hr />
-      <Map center={coordinates} />
+      <Sleep />
+      <hr />
+      <Offers />
+      <hr />
+      <p className="text-xl font-semibold">{`Where you’ll be`}</p>
+      <Map center={coordinates} locationValue={locationValue} />
     </div>
   );
 }
