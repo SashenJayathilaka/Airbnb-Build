@@ -5,7 +5,7 @@
 # Airbnb Clone with Next.js 13!
   
   <p>
-Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth, Framer-motionSocial, Login (Google and Facebook), Image upload, Cloudinary CDN, Location selection, Map component, Country autocomplete, Fetching listings with server components
+Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth, Framer-motionSocial, Login (Google and Facebook), Image upload, Cloudinary CDN, Location selection, Map component, Country autocomplete, Fetching listings with server components.
   </p>
   
 <!-- Badges -->
@@ -127,7 +127,6 @@ Full Stack Airbnb Clone with Next.js 13 Tailwind-css, Prisma, MongoDB, NextAuth,
     </tr>
 </table>
 
-
 ## :toolbox: Getting Started
 
 ### :bangbang: Prerequisites
@@ -161,7 +160,6 @@ To run this project, you will need to add the following environment variables to
 `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`
 
 `NEXT_PUBLIC_LOOKUP_KEY`
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -210,7 +208,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
- 
+
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -218,7 +216,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 #### Add the Tailwind directives to your CSS
